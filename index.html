@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iphone 14 CSS</title>
+</head>
+<body>
+
+<div id="cerclage">
+
+    <!-- antenne -->
+    <div id="antenneTopLeft"></div>
+    <div id="antenneTopHead"></div>
+    <div id="antenneTopRight"></div>
+    <div id="antenneBottomLeft"></div>
+    <div id="antenneBottomRight"></div>
+    <div id="antenneBottomFoot"></div>
+
+    <!-- Buttons -->
+    <div id="buttonTopLeft"></div>
+    <div id="buttonTopLeftReflect"></div>
+    <div id="buttonVol1"></div>
+    <div id="buttonVol1Reflect"></div>
+    <div id="buttonVol2"></div>
+    <div id="buttonVol2Reflect"></div>
+    <div id="buttonRightSide"></div>
+    <div id="buttonRightSideReflect"></div>
+
+    <div id="navigationBar"></div>
+
+
+    <div id="speaker"></div>
+
+    <div id="pillule">
+        <div id="camera"></div>
+        <div id="reflet1"></div>
+        <div id="reflet2"></div>
+    </div>
+    <div id="bordureEcran">
+        <div id="ecran">
+            <div id="image">
+                <div id="boxDate">
+                    <div id="date">
+                        <p>mer. &#9790; 19:27</p>
+                    </div>
+                    <div id="heure">
+                        <p>09:41</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const srcTab = [
+    "url(./images/fd.jpg)", "url(./images/fd1.jpg)", "url(./images/fd2.jpg)", "url(./images/fd3.jpg)", "url(./images/fd4.jpg)", "url(./images/fd5.jpg)", "url(./images/fd6.jpg)"
+    ]
+
+    let count = 1;
+    setInterval(function() { document.getElementById('image').style.backgroundImage = `url(./images/fd${count++}.gif`, count > 7 ? count = 1 : count}, 3500)
+        
+
+</script>
+    
+</body>
+</html>
